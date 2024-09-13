@@ -29,6 +29,7 @@ body::before {
 
 .container {
     width: 80%;
+    box-sizing: border-box;
     height: 80%;
     display: flex;
     justify-content: center;

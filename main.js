@@ -86,6 +86,7 @@ function verificarChute()
 botaoReiniciar.addEventListener('click', function() {
     iniciarJogo(); // Reinicia o jogo ao clicar
     botaoReiniciar.setAttribute('disabled', 'true'); // Desabilita novamente o botão
+    input.removeAttribute('disabled');
 });
 
 input.addEventListener('keypress', function(event) {

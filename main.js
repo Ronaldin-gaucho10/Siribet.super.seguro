@@ -58,8 +58,8 @@ function verificarChute() {
             setTimeout(() => {
                 let audioVitoria = document.getElementById('audioVitoria');
                 audioVitoria.play();
-            }, 2000); // Espera 2 segundos após o download para tocar o áudio
-        }, 4000); // Espera 3 segundos após a fala para iniciar o download
+            }, 1000); // Espera 1 segundo após o download para tocar o áudio
+        }, 5000); // Espera 5 segundos após a fala para iniciar o download
     }
     
     else if (tentativa >= maxTentativas) {

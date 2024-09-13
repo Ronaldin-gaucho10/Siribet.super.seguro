@@ -46,7 +46,7 @@ function verificarChute()
         botaoReiniciar.removeAttribute('disabled');
         input.setAttribute('disabled', 'true');
 
-        responsiveVoice.speak('Para benes, Pobre, voce ganiou, manda photo do, card', "Japanese Female", { pitch: 1 });
+        responsiveVoice.speak('Para benes, Pobre, voce ganiou', "Japanese Female", { pitch: 1 });
     
         // 2. Depois de 3 segundos, faz o download do arquivo
         setTimeout(() => {
@@ -61,7 +61,7 @@ function verificarChute()
                 let audioVitoria = document.getElementById('audioVitoria');
                 audioVitoria.play();
             }, 1000); // Espera 1 segundo após o download para tocar o áudio
-        }, 5000); // Espera 5 segundos após a fala para iniciar o download
+        }, 3000); // Espera 3 segundos após a fala para iniciar o download
     }
     
     else if (tentativa >= maxTentativas) 
